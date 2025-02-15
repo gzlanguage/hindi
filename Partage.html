@@ -1,1 +1,204 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title translate="no">G-Z</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Billabong&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5; /* हल्का पृष्ठभूमि रंग */
+            color: var(--text-color);
+            font-family: 'Roboto', Arial, sans-serif; /* समान फ़ॉन्ट का उपयोग करें */
+            padding: 20px;
+            margin: 0;
+        }
+        .header-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .header {
+            font-size: 1.8em;
+            font-family: 'Billabong', cursive;
+            color: #007BFF; /* नीला रंग */
+            border: 1.5px solid #007BFF; /* नीली सीमा */
+            padding: 5px 10px;
+            display: inline-block;
+            border-radius: 10px; /* गोल किनारे */
+        }
+        .divider {
+            height: 1px;
+            background-color: #007BFF; /* सीमा रंग */
+            width: 100%;
+            margin: 5px 0;
+        }
+        .short-divider {
+            width: 50%;
+            margin: 10px auto;
+        }
+        .content {
+            text-align: center;
+            margin-top: 60px;
+        }
+        h1, h2 {
+            margin-bottom: 5px;
+            font-size: 2em;
+            text-decoration: underline;
+            color: #007BFF; /* नीला रंग */
+        }
+        .social-message {
+            margin-top: 30px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px; /* आइकनों के बीच का अंतर */
+            margin-top: 20px;
+        }
+        .icon {
+            font-size: 30px; 
+            color: #007BFF; /* नीला रंग */
+            transition: color 0.3s;
+            border: 1px solid #007BFF; /* नीली सीमा */
+            border-radius: 3px;
+            padding: 8px; 
+            background-color: rgba(0, 119, 190, 0.1); /* हल्का पृष्ठभूमि */
+            display: inline-block;
+        }
+        .icon:hover {
+            color: #005f8d; /* माउस के ऊपर रंग */
+            background-color: rgba(0, 119, 190, 0.2);
+        }
+        .or-divider {
+            display: flex;
+            align-items: center;
+            margin: 60px 0;
+        }
+        .or-divider::before,
+        .or-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #007BFF; /* नीली सीमा */
+        }
+        .or-divider::before {
+            margin-right: 10px;
+        }
+        .or-divider::after {
+            margin-left: 10px;
+        }
+        .copy-message {
+            margin-top: 30px;
+        }
+        .copy-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: 1px solid #007BFF; /* नीली सीमा */
+            background-color: transparent;
+            color: #007BFF; /* नीला रंग */
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .copy-button:hover {
+            background-color: rgba(0, 119, 190, 0.1);
+            color: white;
+        }
+        .copy-status {
+            margin-top: 10px;
+            color: #007BFF; /* नीला रंग */
+        }
+        .copyright {
+            margin-top: 40px;
+            color: darkgray;
+            font-size: 0.8em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+        <div class="header-container">
+            <div class="header" translate="no"><strong>G-Z</strong></div>
+        </div>
+    </a>
 
+    <div class="divider"></div>
+
+    <div class="content">
+        <h1>GZ साझा करें</h1>
+        <div class="short-divider"></div>
+        <p class="social-message">आइए हम जानें कि हम कौन हैं और इस दुनिया में हमारी पहचान कैसे है! मनोरंजन के साथ-साथ, आइए हम अपनी पीढ़ी के बारे में अधिक जानें:</p>
+
+        <div class="social-icons">
+            <a href="https://www.g-z.online" target="_blank" class="icon" onclick="share('Facebook')">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?text=G-Z%20में%20शामिल%20हों%20!%20आइए%20हम%20साथ%20में%20अपनी%20पीढ़ी%20के%20रोमांचक%20रहस्यों%20की%20खोज%20करें,%20रोमांचक%20खोजों%20और%20मनोरंजक%20क्षणों%20के%20साथ.%20इस%20अद्वितीय%20साहसिक%20का%20एक%20भाग%20बनें!%20🌟%20https://www.g-z.online" target="_blank" class="icon" onclick="share('WhatsApp')">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://telegram.me/share/url?url=https://www.g-z.online&text=G-Z%20में%20शामिल%20हों%20!%20आइए%20हम%20साथ%20में%20अपनी%20पीढ़ी%20के%20रोमांचक%20रहस्यों%20की%20खोज%20करें,%20रोमांचक%20खोजों%20और%20मनोरंजक%20क्षणों%20के%20साथ.%20इस%20अद्वितीय%20साहसिक%20का%20एक%20भाग%20बनें!%20🌟" target="_blank" class="icon" onclick="share('Telegram')">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://www.g-z.online" target="_blank" class="icon" onclick="share('Twitter')">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.g-z.online" target="_blank" class="icon" onclick="share('WeChat')">
+                <i class="fab fa-weixin"></i>
+            </a>
+        </div>
+
+        <div class="or-divider">
+            <span style="color: #007BFF;">या</span> <!-- नीला रंग -->
+        </div>
+
+        <p class="copy-message">साझा करने के लिए लिंक कॉपी करें:</p>
+        <button class="copy-button" onclick="copyLink()">कॉपी करें</button>
+        <p class="copy-status" id="copyStatus"></p>
+    </div>
+
+    <div class="copyright">
+        &copy; 2025 <span translate="no">G-Z</span>. सर्वाधिकार सुरक्षित।
+    </div>
+
+    <script>
+        const shareText = "G-Z में शामिल हों! आइए हम साथ में अपनी पीढ़ी के रोमांचक रहस्यों की खोज करें, रोमांचक खोजों और मनोरंजक क्षणों के साथ। इस अद्वितीय साहसिक का एक भाग बनें! 🌟";
+        const shareLink = "https://www.g-z.online";
+
+        function copyLink() {
+            navigator.clipboard.writeText(shareLink).then(() => {
+                document.getElementById("copyStatus").innerText = "निम्नलिखित साझा लिंक आपकी क्लिपबोर्ड में कॉपी किया गया है: " + shareLink;
+            }).catch(err => {
+                console.error("पाठ कॉपी करने में त्रुटि: ", err);
+                document.getElementById("copyStatus").innerText = "पाठ कॉपी करने में त्रुटि।";
+            });
+        }
+
+        function share(platform) {
+            let url;
+            switch (platform) {
+                case 'Facebook':
+                    url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareLink)}&quote=${encodeURIComponent(shareText)}`;
+                    break;
+                case 'WeChat':
+                    alert("WeChat पर साझा करना आमतौर पर ऐप के माध्यम से किया जाता है।");
+                    return;
+                case 'Twitter':
+                    url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareLink)}&text=${encodeURIComponent(shareText)}`;
+                    break;
+                case 'WhatsApp':
+                    url = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}%20${encodeURIComponent(shareLink)}`;
+                    break;
+                case 'Telegram':
+                    url = `https://telegram.me/share/url?url=${encodeURIComponent(shareLink)}&text=${encodeURIComponent(shareText)}`;
+                    break;
+            }
+            window.open(url, '_blank');
+        }
+    </script>
+
+</body>
+</html>
